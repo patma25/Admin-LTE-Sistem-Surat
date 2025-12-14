@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin LTE - Dashboard Surat</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f9; }
+    header { background: #0d6efd; color: #fff; padding: 15px; text-align: center; }
+    .container { padding: 20px; }
+    .card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 10px; border: 1px solid #ddd; text-align: center; }
+    th { background: #e9ecef; }
+    .status { padding: 5px 10px; border-radius: 5px; color: #fff; font-size: 12px; }
+    .status.baru { background: #198754; }
+    .status.proses { background: #ffc107; color: #000; }
+    .status.selesai { background: #0d6efd; }
+    .aksi button { padding: 5px 10px; margin: 2px; border: none; border-radius: 4px; cursor: pointer; }
+    .btn-view { background: #0d6efd; color: #fff; }
+    .btn-edit { background: #ffc107; }
+    .btn-delete { background: #dc3545; color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin LTE</h1>
+    <p>Dashboard Manajemen Surat</p>
+  </header>
+
+  <div class="container">
+    <!-- Dashboard -->
+    <div class="card">
+      <h2>Dashboard</h2>
+      <p>Selamat datang di sistem Admin LTE. Gunakan menu di bawah untuk mengelola surat masuk dan surat keluar.</p>
+    </div>
+
+    <!-- Surat Masuk -->
+    <div class="card">
+      <h2>Surat Masuk</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No Surat</th>
+            <th>Perihal</th>
+            <th>Tanggal</th>
+            <th>Asal Surat</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SM-001</td>
+            <td>Permohonan Data</td>
+            <td>01-01-2025</td>
+            <td>Dinas Pendidikan</td>
+            <td><span class="status baru">Baru</span></td>
+            <td class="aksi">
+              <button class="btn-view">Lihat</button>
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">Hapus</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Surat Keluar -->
+    <div class="card">
+      <h2>Surat Keluar</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No Surat</th>
+            <th>Perihal</th>
+            <th>Tanggal</th>
+            <th>Tujuan Surat</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SK-001</td>
+            <td>Balasan Permohonan</td>
+            <td>02-01-2025</td>
+            <td>Dinas Pendidikan</td>
+            <td><span class="status selesai">Selesai</span></td>
+            <td class="aksi">
+              <button class="btn-view">Lihat</button>
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">Hapus</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
